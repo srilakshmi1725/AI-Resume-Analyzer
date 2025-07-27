@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analyzer</title>
+</head>
+<body>
+    <h1>Upload Your Resume</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="resume" required>
+        <button type="submit">Upload</button>
+    </form>
+    <hr>
+    <h3>Extracted Resume Text:</h3>
+    <pre>{{ resume_text }}</pre>
+</body>
+</html>
